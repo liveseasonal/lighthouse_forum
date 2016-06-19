@@ -1,0 +1,1 @@
+They asked us to add a more conventional readme doc and here it is
