@@ -3,6 +3,7 @@ LighthouseForum::Application.routes.draw do
 
 
   resources :posts
+  root to: 'posts#index'
 #Refactored the below. Because so common rails gives us a method to run
   # get 'posts',          to: 'posts#index'
   # get 'posts/new',      to: 'posts#new'
