@@ -2,6 +2,11 @@
 <p><%= @post[:text] %></p>
 <small>- <%= @post[:author] %></small> -->
 
-<h2><%= @post.title %></h2>
+<!-- <h2><%= @post.title %></h2>
+<p><%= @post.text %></p>
+<small>- <%= @post.author %></small> -->
+
+<%= link_to "Back to all posts", posts_path %>
+<h2><%= @post.title %> (<%= link_to "edit", edit_post_path(@post) %>)</h2>
 <p><%= @post.text %></p>
 <small>- <%= @post.author %></small>
