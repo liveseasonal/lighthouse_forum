@@ -1,7 +1,9 @@
 LighthouseForum::Application.routes.draw do
 
   get 'posts', to: 'posts#index'
-
+  get 'posts/new', to: 'posts#new'
+  get 'posts/:id', to: 'posts#show'
+  post 'posts',    to: 'posts#create'
 
   # get 'posts/0', to: 'posts#post0'
   # get 'posts/1', to: 'posts#post1'
@@ -9,7 +11,7 @@ LighthouseForum::Application.routes.draw do
   # get 'posts/3', to: 'posts#post3'
 
 #the below replaces the above
-  get 'posts/:id', to: 'posts#show'
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
